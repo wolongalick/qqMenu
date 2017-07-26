@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<com.alick.qqmenu.view.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:background="@mipmap/bg"
+    >
 
-    <com.alick.qqmenu.view.DragLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#66ff0000"
+        android:orientation="vertical" >
+    </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/ml_left"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#00ffff"
-            />
-        <FrameLayout
-            android:id="@+id/ml_main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#ff00ff"
-            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6600ff00"
+        android:orientation="vertical" >
+    </LinearLayout>
 
-    </com.alick.qqmenu.view.DragLayout>
-
-</LinearLayout>
+</com.alick.qqmenu.view.DragLayout>
